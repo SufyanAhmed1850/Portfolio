@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --clr-blak: #161616;
+    --clr-dim: #898989;
+    --clr-wit: #ffffff;
+    --clr-grn: #3DCFD3;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color: var(--clr-blak);
+    background-image: url(./images/Group\ 983.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: -250px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    margin-top: -30px;
+    background-color: #16161688;
+    backdrop-filter: blur(7px);
+    z-index: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+.logo{
+    font-size: 24px;
+    letter-spacing: .3em;
+    font-weight: 600;
+    color: var(--clr-wit);
+    cursor: pointer;
+}
+.logo span{
+    color: var(--clr-grn);
+}
+.links a{
+    color: var(--clr-wit);
+    text-decoration: none;
+    margin: 0px 2em;
+    position: relative;
+    width: max-content;
+}
+.links a::before{
+    content: "";
+    position: absolute;
+    left: -1;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-grn);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform ease 400ms;
+}
+.links a:hover::before{
+    transform: scaleX(1);
+}
+.right button{
+    cursor: pointer;
+    background-color: var(--clr-grn);
+    padding: .5em 2em;
+    border-radius: .3em;
+    border: 1px solid var(--clr-grn);
+    transition: ease 400ms;
+}
+.right button:hover{
+    background: none;
+    color: var(--clr-wit);
+    border: 1px solid var(--clr-grn);
+}
+.home{
+    background-image: url(./images/Group\ 983.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 1115px 70px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    height: 100vh;
+}
+.home .name h1{
+    color: var(--clr-grn);
+    line-height: 1.4;
+    font-size: 2.6em;
+}
+.home .name p{
+    color: var(--clr-wit);
+    font-size: 1.7em;
+}
+.home .name_desc{
+    width: 28%;
+    font-size: .9em;
+    line-height: 1.4;
+    color: var(--clr-wit);
+}
+.image_color{
+    background: rgb(22,22,22);
+    background: linear-gradient(0deg, rgba(22,22,22,1) 10%, rgba(61,207,211,1) 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.image{
+    background-image: url(./images/pic.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border-radius: 50%;
+    width: max-content;
+    width: 200px;
+    height: 200px;
+}
+.about{
+    padding-top: 8em;
+    height: 70vh;
+}
+.image_color1{
+    width: 300px;
+    height: 300px;
+}
+.image1{
+    background-image: url(./images/pic1.png);
+    width: 300px;
+    height: 300px;
+}
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--clr-wit);
+}
+.about p{
+    line-height: 3rem;
+}
+.left_about{
+    width: 20%;
+}
+.right_about{
+    width: 40%;
+}
+.about_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.about_sec h1{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--clr-grn);
+}
+.about_bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.projects{
+    /* height: 100vh; */
+    padding-top: 5em;
+    margin-top: 4em;
+}
+.projects h1{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--clr-grn);
+    margin-top: 10px;
+    line-height: 4em;
+}
+.card_container{
+    width: 80%;
+    margin: 25px 11%;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    min-height: 100vh;
+}
+.card{
+    color: var(--clr-wit);
+    background-size: cover;
+    background-position: center;
+    width: 225px;
+    padding: 120px 0 0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform ease 500ms;
+    max-height: 281px;
+}
+.card_1{
+   background-image: url(./images/links.png); 
+}
+.card_2{
+    background-image: url(./images/table.png);
+}
+.card_3{
+    background-image: url(./images/review.png);
+}
+.card_4{
+    background-image: url(./images/smit.png);
+}
+.card_5{
+    background-image: url(./images/sign.png);
+}
+.card_6{
+    background-image: url(./images/apple.png);
+}
+.card_7{
+    background-image: url(./images/saylani.png);
+}.card_8{
+    background-image: url(./images/snipping.png);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card_content{
+    --padding: 15px;
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / .3) 20%, hsl(0 0% 0% / 1));
+    padding: var(--padding);
+    transform: translateY(68%);
+    transition: transform ease 500ms;
+}
+.card:hover .card_content, .card:focus-within{
+    transform: translateY(0);
+    transition-delay: 350ms;
+}
+.card_content > *:not(.card_title){
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.card:hover .card_content > *:not(.card_title), .card:focus-within .card_content > *:not(.card_title){
+    transition-delay: 500ms;
+    opacity: 1;
+}
+.card_body{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 7px;
+}
+.card_title{
+    position: relative;
+    width: max-content;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.card_title::after{
+    content: "";
+    position: absolute;
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    height: 3px;
+    width: calc(100% + var(--padding));
+    background-color: var(--clr-grn);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform ease 350ms;
+}
+.card:hover .card_title::after{
+    transform: scaleX(1);
+}
+.button{
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--clr-blak);
+    background-color: var(--clr-grn);
+    padding: 5px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+.button:hover, .button:active{
+    background-color: var(--clr-wit);
+}
