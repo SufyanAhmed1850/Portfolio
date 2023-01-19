@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -24,7 +31,7 @@
                         <a href="#">Home</a>
                         <a href="#abaut">About</a>
                         <a href="#proj">Projects</a>
-                        <a href="#">Contact</a>
+                        <a href="#cont">Contact</a>
                     </div>
                 </div>
                 <div class="right">
@@ -32,25 +39,35 @@
                 </div>
             </nav>
         </header>
-        <div class="home">
-            <div class="name">
-                <h1>Sufyan Ahmed</h1>
-                <p>MERN Developer</p>
+        <div class="home_flex">
+            <div data-aos="fade-right" data-aos-duration="1000" class="home_left">
             </div>
-            <div class="name_desc">
-                <p>Freelancer providing services for programming and design content needs. Join me down below and let's
-                    get cracking!</p>
-            </div>
-            <div class="icons">
-
-            </div>
-            <div class="image_color">
-                <div class="image">
+            <div class="home">
+                <div data-aos="fade-down" data-aos-duration="1000" class="name">
+                    <h1>Sufyan Ahmed</h1>
+                    <p>MERN Developer</p>
                 </div>
+                <div class="animate__animated animate__fadeIn  name_desc">
+                    <p>Freelancer providing services for programming and design content needs. Join me down below and
+                        let's
+                        get cracking!</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="icons">
+                    <a class="fa-brands fa-github icon_a" href="https://github.com/SufyanAhmed1850" target="_blank"></a>
+                    <a class="fa-brands fa-instagram icon_a" href="https://www.instagram.com/sufyanahmed661/"
+                        target="_blank"></a>
+                    <a class="fa-brands fa-whatsapp icon_a" href="https://wa.me/923327319831" target="_blank"></a>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="image_color">
+                    <div class="image">
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000" class="home_right">
             </div>
         </div>
         <div class="about" id="abaut">
-            <div class="left_about">
+            <div data-aos="fade-right" data-aos-duration="1000" class="left_about">
                 <div class="image_color image_color1">
                     <div class="image image1">
                     </div>
@@ -58,16 +75,16 @@
             </div>
             <div class="right_about">
                 <div class="about_sec">
-                    <h1>About Me</h1>
+                    <h1 data-aos="zoom-in" data-aos-duration="600">About Me</h1>
                     <div class="about_bottom">
-                        <div class="about_poin">
+                        <div data-aos="fade-left" data-aos-duration="1000" class="about_poin">
                             <p>Name:</p>
                             <p>Date of birth:</p>
                             <p>Nationality:</p>
                             <p>Email:</p>
                             <p>Phone:</p>
                         </div>
-                        <div class="about_detail">
+                        <div data-aos="fade-left" data-aos-duration="1000" class="about_detail">
                             <p>Sufyan Ahmed</p>
                             <p>23-Aug-2003</p>
                             <p>Pakistani</p>
@@ -79,8 +96,8 @@
             </div>
         </div>
         <div class="projects" id="proj">
-            <h1 class="animate__animated animate__fadeIn">PROJECTS</h1>
-            <div class="card_container animate__animated animate__fadeIn">
+            <h1 data-aos="fade-down" data-aos-duration="500">PROJECTS</h1>
+            <div class="card_container">
                 <div class="card card_1">
                     <div class="card_content">
                         <h2 class="card_title">HTML LINKS</h2>
@@ -147,6 +164,42 @@
                 </div>
             </div>
         </div>
+        <div class="contact" id="cont">
+            <div data-aos="fade-right" data-aos-duration="1000" class="left_contact">
+                <h1>Contact</h1>
+                <div class="left_desc">
+                    <div class="1lin">
+                        <input class="line1" type="text" placeholder="Name">
+                        <input class="line1" type="text" placeholder="Email address">
+                    </div>
+                    <input class="line2" type="text" placeholder="Subject">
+                    <textarea class="line3" cols="60" rows="6" placeholder="Message"></textarea>
+                    <button class="message">Send</button>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000" class="right_contact">
+                <div class="image_color image_color1">
+                    <div class="image image2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo foot_left">
+                <p>SA<span>M</span></p>
+            </div>
+            <div class="foot_center">
+                <p>Copyright © 2023 SAM. All rights reserved.</p>
+            </div>
+            <div class="foot_right">
+                <p>English</p>
+            </div>
+        </footer>
     </div>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </html>
