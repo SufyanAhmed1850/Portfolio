@@ -101,10 +101,6 @@ nav{
     height: 600px;
 }
 .home{
-    background-image: url(./images/Group\ 983.png);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: 1115px 70px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -129,7 +125,6 @@ nav{
     color: var(--clr-wit);
     animation-duration: 3s
 }
-
 .icon_a{
     text-decoration: none;
     font-size: 36px;
