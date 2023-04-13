@@ -584,7 +584,8 @@ footer {
     border-radius: .5rem;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
-    width: 45%;
+    width: 80%;
+    max-width: 450px;
     padding: 1.25rem 4rem;
 }
 
